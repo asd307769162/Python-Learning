@@ -1,0 +1,20 @@
+    <html>  
+        <head>  
+            <title>hello</title>  
+        </head>  
+        <body>  
+            {% include 'common.html' %}  
+        </body>  
+    </html>  
+	
+	
+	{% extends 'base.html' %}  
+    {% block title %}  
+        flask  
+    {% endblock %}  
+    {% block head %}  
+        {{super()}}  
+    {% endblock %}  
+    {% block body %}  
+        hello world  
+    {% endblock %}  
