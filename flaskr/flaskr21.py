@@ -16,7 +16,7 @@ import os
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:19980501.@localhost/flask'  #设置MySQL
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:password@localhost/flask'  #设置MySQL
 app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN']=True  #设置自动提交commit
 db = SQLAlchemy(app)
 

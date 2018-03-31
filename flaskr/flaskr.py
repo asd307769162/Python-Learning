@@ -23,7 +23,7 @@ PASSWORD = 'default'
 mysql = MySQL()
 app = Flask(__name__)
 app.config['MYSQL_DATABASE_USER'] = 'root'
-app.config['MYSQL_DATABASE_PASSWORD'] = '19980501.'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'password'
 app.config['MYSQL_DATABASE_DB'] = 'flask'
 app.config['MYSQL_DATABASE_HOST'] = 'localhost'
 mysql.init_app(app)
